@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width = device-width, initial-scale=1" charset="utf-8">
+      <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+      <link rel="stylesheet" href="css/app.css">
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery.mobile-1.4.5.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+      <script src="js/app.js"></script>
+
+  </head>
+  <body>
+    <div data-role="page" id="paginaInicio">
+        <div data-role="header">
+            <h1>Gestión Hotel</h1>
+        </div>
+        <div data-role="content">
+          <a id="registrarHotel" data-role="button">Registrar Hotel</a>
+          <a id="listarHotel" data-role="button">Listar Hotel</a>
+        </div>
+        <div data-role="footer">
+            <p align="center">Gestión Hotel</p>
+        </div>
+    </div>
+
+    <div data-role="page" id="paginaRegistro">
+      <div data-role="content">
+        <div class="ui-field-contain">
+          <label for="nombreHotel">Nombre:</label>
+          <input type="text" name="nombreHotel" id="nombreHotel">
+
+          <label for="divMapa">Ubicación:</label>
+          <div data-role="content" id="divMapa"></div>
+
+          <label for="ciudad">Ciudad:</label>
+          <input type="text" name="ciudad" id="ciudad">
+
+          <label for="telefono">Teléfono:</label>
+          <input type="text" name="telefono" id="telefono">
+
+          <label for="estrellas">Estrellas:</label>
+          <input type="text" name="estrellas" id="estrellas">
+        </div>
+        <fieldset class="ui-grid-a">
+          <div class="ui-block-a"><a id="guardarHotel" data-role="button" >Guardar</a></div>
+          <div class="ui-block-b"><a id="volver" data-role="button" >Volver</a></div>
+        </fieldset>
+      </div>
+    </div>
+
+    <div data-role="page" id="paginaLista">
+        <div data-role="header">
+            <h1>Lista Hoteles</h1>
+        </div>
+        <div data-role="content">
+          <ul id="listaHoteles" data-role="listview">
+
+          </ul>
+          <div class="ui-block-b"><a id="volver" data-role="button" >Volver</a></div>
+        </div>
+    </div>
+
+    <div data-role="page" id="paginaDatos">
+        <div data-role="header">
+            <h1>Datos Hotel</h1>
+        </div>
+        <div data-role="content">
+          <div id="datos" class="">
+
+          </div>
+
+          <a id="volverListaHoteles" data-role="button" >Lista Hoteles</a>
+        </div>
+    </div>
+
+
+
+
+  </body>
+
+</html>
