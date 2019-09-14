@@ -31,7 +31,7 @@
           <input type="text" name="nombreHotel" id="nombreHotel">
 
           <label for="divMapa">Ubicación:</label>
-          <div data-role="content" id="divMapa"></div>
+          <div data-role="content" id="divMapa" class="mapa"></div>
 
           <label for="ciudad">Ciudad:</label>
           <input type="text" name="ciudad" id="ciudad">
@@ -44,7 +44,7 @@
         </div>
         <fieldset class="ui-grid-a">
           <div class="ui-block-a"><a id="guardarHotel" data-role="button" >Guardar</a></div>
-          <div class="ui-block-b"><a id="volver" data-role="button" >Volver</a></div>
+          <div class="ui-block-b"><a id="volverPaginaInicio1" data-role="button" >Volver</a></div>
         </fieldset>
       </div>
     </div>
@@ -54,10 +54,11 @@
             <h1>Lista Hoteles</h1>
         </div>
         <div data-role="content">
-          <ul id="listaHoteles" data-role="listview">
+          <ul id="listaHoteles" data-role="listview" class="ui-listview ">
 
           </ul>
-          <div class="ui-block-b"><a id="volver" data-role="button" >Volver</a></div>
+          </br>
+          <div ><a id="volverPaginaInicio2" data-role="button" >Volver</a></div>
         </div>
     </div>
 
@@ -66,10 +67,8 @@
             <h1>Datos Hotel</h1>
         </div>
         <div data-role="content">
-          <div id="datos" class="">
-
-          </div>
-
+          <div id="datos" class=""></div>
+          <div data-role="content" id="divMapa1" class="mapa"></div>
           <a id="volverListaHoteles" data-role="button" >Lista Hoteles</a>
         </div>
     </div>
